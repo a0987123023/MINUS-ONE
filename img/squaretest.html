@@ -1,0 +1,475 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Minus-one 減一 donate-plan</title>
+    <style>
+        *{
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    background-image: linear-gradient(180deg, #333,rgba(238, 238, 238, .5));
+    box-shadow: 2px 3px 10px #333;
+}
+.header header{
+    display: flex;
+    width: 100%;
+}
+.header .logo img{
+    width: 50px;
+    vertical-align: top;
+    margin: 5px 20px;
+}
+.header .logo img:hover{
+    animation: shack 1s infinite ease-in;
+}
+@keyframes shack{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.header .nav{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+}
+.header header .nav li{
+    position: relative;
+}
+.header .nav li a{
+    text-align: center;
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    background-color: #444;
+    color: #fff;
+    text-decoration: none;
+    transition: 1s;
+}
+.header .nav li a:hover{
+    background-color: #fff;
+    color: #444;
+}
+.header .nav li:hover > a{
+    font-size: 16px;
+}
+.header header .nav li ul{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    z-index: 5;
+}
+.header header .nav li ul a{
+    display: block;
+}
+.header .nav li:nth-child(1):hover ul{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+.header header .nav li::before, .header header .nav li::after{
+content:"";
+width: 0;
+height: 3px;
+position: absolute;
+transition: all 0.2s linear;
+background: #333;
+}
+
+.header header .nav li a::before, .header header .nav li a::after{
+content:"";
+width:3px;
+height:0;
+position: absolute;
+transition: all 0.2s linear;
+background: #333;
+}
+.header header .nav li:hover::before, .header header .nav li:hover::after{
+width: 100%;
+}
+.header header .nav li:hover a::before, .header header .nav li:hover a::after{
+height: 100%;
+}
+.header header .nav li::before, .header header .nav li::after{
+transition-delay: 0s;
+}
+.header header .nav li a::before, .header header .nav li a::after{
+transition-delay: 0.2s;
+}
+.header header .nav li::before{
+right: 0;
+top: 0;
+}
+.header header .nav li::after{
+left: 0;
+bottom: 0;
+}
+.header header .nav li a::before{
+left: 0;
+top: 0;
+}
+.header header .nav li a::after{
+right: 0;
+bottom: 0;
+}
+.header header .nav li:hover::before, .header header .nav li:hover::after{
+transition-delay: 0.2s;
+}
+.header header .nav li:hover a::before, .header header .nav li:hover a::after{
+transition-delay: 0s;
+}
+
+
+
+
+
+
+
+
+/* div.perspective{
+    position: relative;
+    right: -900px;
+    bottom: -350px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin-left: 100px;
+    margin-top: 100px;
+    perspective: 1000px;
+    perspective-origin: 50% -150px;
+    transform-style: preserve-3d;
+  }
+  div.cube{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: cube_rotate 10s infinite ease; 
+    border: 1px solid red;
+  }
+  div.cube > div{
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    text-align: center;
+    line-height: 200px;
+    position: absolute;
+  }
+  @keyframes cube_rotate {
+    0% {
+      transform: rotateZ(0) rotateY(0) rotateX(0);
+    }
+    100% {
+      transform: rotateZ(360deg) rotateY(360deg) rotateX(360deg);
+    }
+  }
+  
+.front{
+    background-color: hsla(0, 100%, 50%, .5);
+    transform: translateZ(100px);
+}
+.back{
+    background-color: hsla(300, 100%, 50%, .5);
+    transform: translateZ(-100px) rotateY(180deg);
+}
+.left{
+    background-color: hsla(400, 100%, 50%, .5);
+    transform-origin: 0;
+    transform: translateZ(-100px) rotateY(-90deg);
+}
+.right{
+    background-color: hsla(500, 100%, 50%, .5);
+    transform-origin: 100%;
+    transform: translateZ(-100px) rotateY(90deg);
+}
+.top{
+    background-color: hsla(600, 100%, 50%, .5);
+    transform: translateY(-100px) rotateX(90deg);
+}
+.bottom{
+    transform: translateY(100px) rotateX(90deg);
+} */
+
+
+
+
+
+
+
+
+
+
+.banner{
+    width: 100%;
+}
+.banner .container{
+    border: orangered 2px solid;
+    /* margin-top: 580px;
+    transform: rotate(-45deg);
+    margin-left: 800px;
+    flex-wrap: nowrap; */
+}
+.banner .container .content{
+    /* width: 960px; */
+    width: 1280px;
+    height: 300px;
+}
+.banner .container .content img{
+    width: 300px;
+}
+.banner .container .content1{
+    margin-bottom: 20px;
+}
+.banner .container .content1 .item{
+    display: inline-block;
+    margin-right: 20px;
+    width: 300px;
+    height: 300px;
+    /* transform: rotate(45deg); */
+    /* width: 100%; */
+}
+.banner .container .content1 .item:first-child{
+    width: 300px;
+    height: 300px;
+    /* background-image: url(/796df99b6d4cb5f17274e8f849292add.jpg);
+    background-size: contain; */
+}
+.banner .container .content1 .item img{
+    display: inline-block;
+    margin-right: 20px;
+    width: 300px;
+    height: 300px;
+    /* width: 100%; */
+}
+.banner .container .content2{
+    display: inline-block;
+    width: 300px;
+}
+.banner .container .content2 .item{
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 300px;
+    /* margin-right: 20px; */
+}
+.banner .container .content2 .item img{
+    height: 300px;
+}
+.banner .container .content2 .item:nth-child(2) img{
+    display: inline-block;
+    height: 600px;
+    /* margin-right: 20px; */
+}
+.banner .container .content2 .item img{
+    display: inline-block;
+}
+.banner .container .content3{
+    position: relative;
+    /* top: -920px;
+    right: -300px; */
+
+
+    /* top: -920px;
+    right: -300px;
+    display: inline-block;
+    width: 420px;
+    height: 640px; */
+}
+.banner .container .content3 .item{
+    position: absolute;
+    display: inline-block;
+    height: 920px;
+    width: 940px;
+    margin-left: 20px;
+}
+.banner .container .content3 .item img{
+    height: 920px;
+    width: 940px;
+}
+
+
+
+
+
+
+
+.footer{
+    width: 100%;
+    background-color: #333;
+}
+.footer .footer-media{
+    text-align: center;
+    padding-top: 30px;
+}
+.footer .footer-media a{
+    margin:30px 30px;
+}
+.footer .footer-media img{
+    width: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    transition: .5s;
+    height: auto;
+}
+.footer .footer-media img:hover{
+    transform: translateY(-20px);
+    border: 1px solid #888;
+    box-shadow: 0 0 10px #888;
+}
+.footer .footer-nav{
+    margin-top: 20px;
+    text-align: center;
+}
+.footer .footer-nav a{
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    padding-right: 4px;
+}
+.footer .footer-nav a:hover{
+}
+.footer .footer-nav a:not(:first-child)::before{
+    content: ' | ';
+}
+.footer footer{
+    color: #999;
+    text-align: center;
+    padding: 20px 0;
+}
+@media screen and (max-width: 1200px) and (min-width:992px){
+    
+}
+@media screen and (max-width: 991px) and (min-width:769px){
+   
+}
+@media screen and (max-width: 768px){
+    .footer .footer-media img{
+        width: 40px;
+    }
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+        <header>
+            <div class="logo">
+                <a href="/index.html"><img src="/koala_logo.png" alt=""></a>
+            </div>
+            <div class="nav">
+                <ul class="nav">
+                    <li>
+                        <a href="">捐助計畫</a>
+                        <ul class="inner-ul">
+                            <li><a href="">我要捐款</a></li>
+                            <li><a href="">認養考拉</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">考拉商店</a></li>
+                    <li><a href="">活動資訊</a></li>
+                    <li><a href="">聯絡我們</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <!-- <div class="perspective">
+        <div class="cube">
+          <div class="front">前</div>
+          <div class="back">後</div>
+          <div class="left">左</div>
+          <div class="right">右</div>
+          <div class="top">上</div>
+          <div class="bottom">下</div>
+        </div>
+      </div> -->
+
+        <div class="banner">
+            <div class="container">
+                <div class="content1 content">
+                    <div class="item">
+                        <img src="/796df99b6d4cb5f17274e8f849292add.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="/images (1).jpeg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="/img/images (6).jpeg" alt="">
+                    </div>
+                    <div class="item">
+                        <!-- <img src="/796df99b6d4cb5f17274e8f849292add.jpg" alt=""> -->
+                    </div>
+                </div>
+                <div class="content2 content">
+                    <div class="item">
+                        <img src="/SN3091018-Koala-Popup-1.jpg" alt="">
+
+                    </div>
+                    <div class="item">
+                        <img src="/img/imh/2-177.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content3 content">
+                    <div class="item">
+                        <img src="/img/imh/202005081504161101_AG097.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner-mask"></div>
+    <div class="footer">
+        <div class="footer-media">
+            <a href="#"><img src="/img/social media img/fbicon.png" alt=""></a>
+            <a href="#"><img src="/img/social media img/igicon.png" alt=""></a>
+            <a href="#"><img src="/img/social media img/gmicon.png" alt=""></a>
+            <a href="#"><img src="/img/social media img/twicon.png" alt=""></a>
+            <a href="#"><img src="/img/social media img/yticon.png" alt=""></a>   
+        </div>
+        <div class="footer-nav">
+            <a href="#">捐助計畫</a>
+            <a href="#">我要捐款</a>
+            <a href="#">認養考拉</a>
+            <a href="#">聯絡我們</a>
+            <a href="#">活動資訊</a>
+            <a href="#">考拉商店</a>
+        </div>
+        <footer>Copyright © 2020 Miuns one . All rights reserved</footer>
+    </div>
+  
+  </body>
+</html>

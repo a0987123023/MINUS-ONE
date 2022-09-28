@@ -1,0 +1,81 @@
+*{    
+    /* border: 1px solid red; */
+    list-style: none;
+}
+body{
+    font: 18px Tahoma,Verdana,Consolas;
+}
+#skin{
+    border: 1px solid #ccc;
+    width: 80%;
+    margin: 50px auto;
+}
+img{
+    width:250px;
+    height: 200px;    
+}
+#newItem{
+    border: 1px solid #ccc;
+    width: 32%;
+    height: 200px;
+    float: left;
+    /* border-right: 1px solid #ccc; */
+}
+#content{
+    border: 1px solid #ccc;
+    width: 32%;
+    height: 200px;
+    float: left;
+}
+#shopButton{
+    border: 1px solid #ccc;
+    width: 32%;
+    height: 200px;
+    float: left;
+}
+.cartProcess{
+    border: 1px solid maroon;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    color: maroon;
+    width: 100px;
+}
+#goShop{
+    width: 48%;
+    height: 200px;
+    float: left;
+}
+ul li{
+    display: inline-block;
+    width: 255px;
+}
+ul li span{
+    display: block;
+}
+ul li div{
+    border: 1px solid #ccc;;
+}
+.addButton{
+    border: 1px solid maroon;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    color: maroon;
+    width: 70px;
+}
+
+
+
+
+#newItem img{
+    width:200px;
+    height: 180px;
+    padding: 10px; 
+    float: left;
+}
+#newItem span{
+    /* border: 1px solid maroon; */
+    display: block;
+    margin: 5px;
+}
